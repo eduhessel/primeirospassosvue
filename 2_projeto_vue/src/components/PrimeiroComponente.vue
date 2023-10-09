@@ -1,9 +1,18 @@
-<template>
-    <h1>Olá Vue!</h1>
+<template> <!--HTML-->
+    <div>
+        <h1>Olá Vue!</h1>
+        <p>Meu nome é {{  nome }} e trabalho como {{ profissao }}</p>
+    </div>
 </template>
 
-<script>
+<script> /* Javascript */
     export default{
-        name: 'PrimeiroComponente'
+        name: 'PrimeiroComponente',
+        data() {
+            return {
+                nome: "Matheus",
+                profissao: "Programador"
+            }
+        }
     }
 </script>
